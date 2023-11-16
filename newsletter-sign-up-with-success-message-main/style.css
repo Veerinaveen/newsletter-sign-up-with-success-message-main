@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(40, 29, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    height: 80vh;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+ 
+.infoContainer{
+ padding: 1rem;
+}
+.infoContainer form h1{
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 1rem;
+    font-size: 3.3rem;
+    margin-top: 2rem;
+}
+.infoContainer form p{
+    color: rgb(63, 36, 88);
+    margin-bottom: 1.5rem;
+}
+.infoContainer form ul{
+    color: rgb(63, 36, 88);
+    margin-bottom: 2rem;
+    list-style-image: url();
+    list-style-type: none;
+    
+    
+}
+
+.infoContainer form ul .box{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+
+}
+.infoContainer form ul li{
+    line-height: 2rem;
+}
+
+.infoContainer form label{
+    display: block;
+    color: rgb(63, 36, 88);
+    margin-bottom: 0.5rem;
+}
+
+.infoContainer form input{
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 1rem;
+}
+.infoContainer form button{
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 340px;
+    color: white;
+    background-color:   hsl(4, 100%, 67%);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.infoContainer form button:hover{
+    background-color: hsl(234, 29%, 20%);
+}
+.massageContainer{
+    display: none;
+    height: 350px;
+    width: 320px;
+   border: 1px solid  black;
+    position: absolute;
+    left: 550px;
+    top: 19vh;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+ .massageContainer .msimg{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+ .massageContainer h2{
+    color: hsl(234, 29%, 20%);
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
+    height: 20px;
+    width: 100%;
+     line-height: 38px;
+     text-indent: -0.5rem;
+}
+ .massageContainer p{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-size: 12px;
+    margin-right: 2rem;
+    color: hsl(231, 7%, 60%);
+}
+ .massageContainer p span{
+    
+    color: hsl(234, 29%, 20%);
+}
+ .massageContainer button{
+    margin-left: 2rem;
+    margin-top: 1.8rem;
+    padding: 0.6rem 4.4rem;
+    background-color:  hsl(4, 100%, 67%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.massageContainer button:hover{
+    background-color: hsl(234, 29%, 20%);
+}
+
+.img{
+    height: 75vh;
+    margin-right: -2rem;
+}
+
+.massage{
+    display: block;
+}
+
+.phone{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .infoContainer form h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .infoContainer form p {
+        font-size: 1rem;
+    }
+
+    .infoContainer form ul {
+        margin-bottom: 1rem;
+    }
+
+    .infoContainer form ul .box {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .infoContainer form ul li {
+        line-height: 1.5rem;
+    }
+
+    .infoContainer form label,
+    .infoContainer form input,
+    .infoContainer form button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .massageContainer {
+        width: 70%;
+        height: 100vh;
+        left: 5%;
+        margin-top: -8rem;
+        border-radius: 0px;
+        padding-top: 5rem;
+        margin-left: 2rem;
+    }
+    .massageContainer h2{
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 3rem;
+    }
+    .massageContainer p{
+        padding-right: 1rem;
+    }
+    .massageContainer button{
+        margin-top: 13rem;
+    }
+
+
+    .img {
+    
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+}
